@@ -1,9 +1,11 @@
 ##############################################################################################################
 #### enter file path and name:
 
-path = './test_data/IMU_test_data/'
-filename = '90deg_z.csv'
+path = './test_data/Polhemus_test_data/'
+filename = 'Polhemus_90degZ_1data.csv'
 
+#path = './test_data/IMU_test_data/'
+#filename = '90deg_x.csv'
 ##############################################################################################################
 
 import math
@@ -136,7 +138,7 @@ dataout = []
 
 with open(path+filename, 'r') as csvfile:
     data = csv.DictReader(csvfile)
-    fieldnames = ['Time','w1','x1','y1','z1','w2','x2','y2','z2','x_diff','y_diff','z_diff']
+    #fieldnames = ['Time','w1','x1','y1','z1','w2','x2','y2','z2','x_diff','y_diff','z_diff']
 
     for row in data:
         w1 = float(row['w1'])
