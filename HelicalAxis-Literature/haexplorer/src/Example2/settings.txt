@@ -1,0 +1,5 @@
+time_start 0.0
+time_end 3.0
+models_scale 0.001
+glyphs_scale 0.05
+outline_width 2.5
