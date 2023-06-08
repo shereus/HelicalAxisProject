@@ -1,7 +1,5 @@
 # HelicalAxisProject
 
-![HelicalAxisProject Logo](https://exan.research.vub.be)
-
 This repository is dedicated to the collaborative development of the Helical Axis Method for describing motion in human joints. The project aims to explore different approaches and techniques to solve the helical axis problem.
 
 Please note that this project is currently a work in progress and is by no means finished. Contributions from the community are highly encouraged and welcomed.
