@@ -1,7 +1,7 @@
 ##############################################################################################################
 #### enter file path and name:
 
-path = '/Users/nicolas/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/Onderzoek/Kinematics/Benyameen/IMU_test_data/'
+path = './test_data/IMU_test_data/'
 filename = '90deg_z.csv'
 
 ##############################################################################################################
@@ -197,7 +197,7 @@ ax4.set_ylabel('femur rel. to tibia')
 #### write to csv ####
 import os
 def write_data_to_csv(data,path, original_filename):
-    adjusted_filename = original_filename.replace('.csv', '_xyz-sequence.csv')
+    adjusted_filename = original_filename.replace('.csv', '_euler-xyz-sequence.csv')
     adjusted_filepath = os.path.join(path, adjusted_filename)
     #header_row = ['time', 'q1_w', 'q1_x', 'q1_y', 'q1_z', 'q2_w', 'q2_x', 'q2_y', 'q2_z'] #Quat only
     header_row = ['time', 'X_1', 'Y_1', 'Z_1', 'X_2', 'Y_2', 'Z_2', 'diff_x', 'diff_y', 'diff_z', 'diff_x_inv', 'diff_y_inv', 'diff_z_inv']
