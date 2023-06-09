@@ -1,11 +1,14 @@
 ##############################################################################################################
 #### enter file path and name:
 
-path = './test_data/Polhemus_test_data/'
-filename = 'Polhemus_90degZ_1data.csv'
+#path = './test_data/Polhemus_test_data/'
+#filename = 'Polhemus_90degZ_1data.csv'
 
 #path = './test_data/IMU_test_data/'
 #filename = '90deg_x.csv'
+
+path = '/Users/nicolas/Desktop/'
+filename = 'right_knee_endo-exo_in_ext-flex_example.csv'
 ##############################################################################################################
 
 import math
@@ -92,7 +95,10 @@ def quaternion_to_euler2(w2, x2, y2, z2):
 
     # ZYX sequence
     Z_2 = math.atan2(2 * (w2 * x2 - z2 * y2), 1 - 2 * (x2 * x2 + y2 * y2))
-    Y_2 = math.asin(2 * (w2 * y2 + z2 * x2))
+    Y_2 = 2 * (w2 * y2 + z2 * x2)
+    Y_2 = +1.0 if Y_2 > +1.0 else Y_2
+    Y_2 = -1.0 if Y_2 < -1.0 else Y_2
+    Y_2 = math.asin(Y_2)
     X_2 = math.atan2(2 * (w2 * z2 + x2 * y2), 1 - 2 * (y2 * y2 + z2 * z2))
 
     X_2 = math.degrees(X_2)
@@ -151,7 +157,7 @@ with open(path+filename, 'r') as csvfile:
         z2 = float(row['z2'])
         q1 = w1, x1, y1, z1
         q2 = w2, x2, y2, z2
-
+        print(q2)
         X_1, Y_1, Z_1 = quaternion_to_euler1(w1, x1, y1, z1)
         X_2, Y_2, Z_2 = quaternion_to_euler2(w2, x2, y2, z2)
         Plot_euler_sensor_1.append([X_1, Y_1, Z_1])
