@@ -48,4 +48,4 @@ We appreciate all forms of contributions, including bug fixes, new features, doc
 
 ## License
 
-The HelicalAxisProject is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this codebase for personal and commercial purposes. See the [LICENSE](LICENSE) file for more information.
+The HelicalAxisProject is licensed under the [MIT License]([LICENSE](https://opensource.org/license/mit/)). You are free to use, modify, and distribute this codebase for personal and commercial purposes.
