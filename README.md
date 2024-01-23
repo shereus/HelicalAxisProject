@@ -42,9 +42,7 @@ Contributions are welcome and encouraged! If you'd like to contribute to the Hel
 
 2. Make your proposed changes, improvements, or additions.
 
-3. Test your changes thoroughly and ensure that the existing codebase remains functional.
-
-4. Submit a pull request, describing the changes you made and providing any relevant context or information.
+3. Submit a pull request, describing the changes you made and providing any relevant context or information.
 
 We appreciate all forms of contributions, including bug fixes, new features, documentation improvements, and more. Together, we can enhance the HelicalAxisProject and advance the understanding of joint motion analysis.
 
